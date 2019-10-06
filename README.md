@@ -1,6 +1,8 @@
 # shop_itens_desafio_05_10_2019
 
-A new Flutter project.
+Mockup / This project
+
+<img src="screenshots/mockup.jpg"/> <img src="screenshots/working.gif" style="width:49%"/>
 
 ## Getting Started
 
