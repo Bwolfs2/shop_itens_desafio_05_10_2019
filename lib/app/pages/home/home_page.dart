@@ -55,19 +55,11 @@ class _HomePageState extends State<HomePage>
     return AnimatedBuilder(
       animation: scrollController,
       builder: (context, child) {
-        return AnimatedPositioned(
-          curve: Curves.ease,
-          left:  0,
-          right: isBottom ? 25 : 0,
-          top: isBottom ? MediaQuery.of(context).size.height - 150 : 15,
-          // bottom: 15,
-          child: AnimatedAlign(
-            duration: Duration(milliseconds: 300),
-            alignment: isBottom ? Alignment.centerRight : Alignment.center,
-            child: 
-               AddButtomWidget(isBottom),
-          ),
-          duration: Duration(milliseconds: 300),
+        return AnimatedAlign(
+          curve: Curves.elasticOut,
+          duration: Duration(milliseconds: 500),
+          alignment: isBottom ? Alignment.bottomRight : Alignment.topCenter,
+          child: AddButtomWidget(isBottom),
         );
       },
     );
